@@ -1,0 +1,5 @@
+SELECT User,Host FROM mysql.user;
+DROP USER 'root'@'localhost';
+CREATE USER 'root'@'%' IDENTIFIED BY 'ironMan1099';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
